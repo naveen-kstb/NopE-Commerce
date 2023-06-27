@@ -1,0 +1,14 @@
+rem bat file is not running in my machine so used this txt file for bat commands due to some restriction also rem using for commenting the line in windows
+
+pytest TestCases/ -v -m "sanity" --html=Reports\sanitytests.html  --browser chrome  
+
+rem pytest TestCases/ -v -m "sanity or regression" --html=Reports\sanitytests_chrome.html  --browser chrome 
+rem pytest TestCases/ -v -m "sanity and regression" --html=Reports\sanitytests_chrome.html  --browser chrome 
+rem pytest TestCases/ -v -m "regression" --html=Reports\sanitytests_chrome.html  --browser chrome 
+
+rem for diff browser also we can run bat using browser name 
+
+rem pytest TestCases/ -v -m "sanity" --html=Reports\sanitytests.html  --browser firefox
+rem pytest TestCases/ -v -m "sanity or regression" --html=Reports\sanitytests_firefox.html  --browser firefox 
+rem pytest TestCases/ -v -m "sanity and regression" --html=Reports\sanitytest_firefox.html  --browser firefox 
+rem pytest TestCases/ -v -m "regression" --html=Reports\sanitytests_firefox.html  --browser firefox 
